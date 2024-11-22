@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/pankajkumar23/Role-Based-Access-Control-Dashboard.git/static/js/main.ed42419f.js",
-    "index.html": "/pankajkumar23/Role-Based-Access-Control-Dashboard.git/index.html",
-    "main.ed42419f.js.map": "/pankajkumar23/Role-Based-Access-Control-Dashboard.git/static/js/main.ed42419f.js.map"
+    "main.js": "/Role-Based-Access-Control-Dashboard/static/js/main.ed42419f.js",
+    "index.html": "/Role-Based-Access-Control-Dashboard/index.html",
+    "main.ed42419f.js.map": "/Role-Based-Access-Control-Dashboard/static/js/main.ed42419f.js.map"
   },
   "entrypoints": [
     "static/js/main.ed42419f.js"
