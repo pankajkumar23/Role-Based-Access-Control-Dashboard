@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import RBACProvider from "./context/RBACContext";
+import UserList from "./components/UserList";
+import RoleList from "./components/RoleList";
+import { Container, Typography } from "@mui/material";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <RBACProvider>
+      <Container>
+        <Typography variant="h4" gutterBottom>
+          Role-Based Access Control Dashboard
+        </Typography>
+        <UserList />
+        <RoleList />
+      </Container>
+    </RBACProvider>
   );
-}
+};
 
 export default App;
