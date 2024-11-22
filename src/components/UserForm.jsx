@@ -19,7 +19,7 @@ const UserForm = ({ open, setOpen, selectedUser  }) => {
     if (selectedUser ) {
       // Update user
       const updatedUser  = { ...selectedUser , name };
-      await fetch(`http://localhost:3001/users/${selectedUser .id}`, {
+      await fetch(`https://6740982cd0b59228b7f09d85.mockapi.io/Users/${selectedUser .id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(updatedUser ),
@@ -28,7 +28,7 @@ const UserForm = ({ open, setOpen, selectedUser  }) => {
     } else {
       // Add new user
       const newUser  = { name };
-      const response = await fetch('http://localhost:3001/users', {
+      const response = await fetch('https://6740982cd0b59228b7f09d85.mockapi.io/Users', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(newUser ),

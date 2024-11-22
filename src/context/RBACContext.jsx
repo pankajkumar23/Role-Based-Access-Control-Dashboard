@@ -8,10 +8,18 @@ const RBACProvider = ({ children }) => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const userResponse = await fetch("http://localhost:3001/users");
-      const roleResponse = await fetch("http://localhost:3001/roles");
-      setUsers(await userResponse.json());
-      setRoles(await roleResponse.json());
+      try {
+        // Fetch users from MockAPI
+        const userResponse = await fetch("https://6740982cd0b59228b7f09d85.mockapi.io/Users");
+        const roleResponse = await fetch("https://6740982cd0b59228b7f09d85.mockapi.io/Roles"); // Assume you have a similar endpoint for roles
+        if (!userResponse.ok || !roleResponse.ok) {
+          throw new Error("Failed to fetch data");
+        }
+        setUsers(await userResponse.json());
+        setRoles(await roleResponse.json());
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
     };
 
     fetchData();

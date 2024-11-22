@@ -9,7 +9,7 @@ const RoleList = () => {
   const [selectedRole, setSelectedRole] = React.useState(null);
 
   const handleDelete = async (id) => {
-    await fetch(`http://localhost:3001/roles/${id}`, { method: "DELETE" });
+    await fetch(`https://6740982cd0b59228b7f09d85.mockapi.io/Roles/${id}`, { method: "DELETE" });
     setRoles(roles.filter((role) => role.id !== id));
   };
 

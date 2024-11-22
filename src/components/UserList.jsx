@@ -9,7 +9,7 @@ const UserList = () => {
   const [selectedUser, setSelectedUser] = React.useState(null);
 
   const handleDelete = async (id) => {
-    await fetch(`http://localhost:3001/users/${id}`, { method: "DELETE" });
+    await fetch(`https://6740982cd0b59228b7f09d85.mockapi.io/Users/${id}`, { method: "DELETE" });
     setUsers(users.filter((user) => user.id !== id));
   };
 

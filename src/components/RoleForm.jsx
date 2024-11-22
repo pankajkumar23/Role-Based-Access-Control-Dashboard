@@ -29,7 +29,7 @@ const RoleForm = ({ open, setOpen, selectedRole }) => {
     if (selectedRole) {
       // Update role
       const updatedRole = { ...selectedRole, name, permissions };
-      await fetch(`http://localhost:3001/roles/${selectedRole.id}`, {
+      await fetch(`https://6740982cd0b59228b7f09d85.mockapi.io/Roles/${selectedRole.id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(updatedRole),
@@ -40,7 +40,7 @@ const RoleForm = ({ open, setOpen, selectedRole }) => {
     } else {
       // Add new role
       const newRole = { name, permissions };
-      const response = await fetch("http://localhost:3001/roles", {
+      const response = await fetch("https://6740982cd0b59228b7f09d85.mockapi.io/Roles/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newRole),
