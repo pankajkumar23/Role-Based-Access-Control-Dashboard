@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/Role-Based-Access-Control-Dashboard/static/js/main.ed42419f.js",
+    "main.js": "/Role-Based-Access-Control-Dashboard/static/js/main.3f0c2f14.js",
     "index.html": "/Role-Based-Access-Control-Dashboard/index.html",
-    "main.ed42419f.js.map": "/Role-Based-Access-Control-Dashboard/static/js/main.ed42419f.js.map"
+    "main.3f0c2f14.js.map": "/Role-Based-Access-Control-Dashboard/static/js/main.3f0c2f14.js.map"
   },
   "entrypoints": [
-    "static/js/main.ed42419f.js"
+    "static/js/main.3f0c2f14.js"
   ]
 }
