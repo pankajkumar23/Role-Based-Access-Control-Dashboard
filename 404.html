@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+</head>
+<body>
+  <h1>Redirecting...</h1>
+  <script>
+    // Redirect to the correct route
+    const pathname = window.location.pathname;
+    window.location.replace(`${window.location.origin}/#${pathname}`);
+  </script>
+</body>
+</html>
